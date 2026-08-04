@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 카메라 -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 오버레이 이미지 -->
+    <ImageView
+        android:id="@+id/overlayImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"/>
+
+    <!-- UI 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:background="#66000000">
+
+        <SeekBar
+            android:id="@+id/opacitySeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/controlbar"
+            android:thumbTint="@color/accent"
+            android:progressBackgroundTint="#444444"
+            android:max="100"
+            android:progress="50"/>
+
+        <Button
+            android:id="@+id/loadBtn"
+            android:text="이미지 선택"
+            android:textColor="@color/textColor"
+            android:backgroundTint="@color/accent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- 메뉴 버튼 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuBtn"
+        android:text="≡"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"/>
+
+    <!-- 십자선 -->
+    <View
+        android:id="@+id/crosshairVertical"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#88FFFFFF"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/crosshairHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#88FFFFFF"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

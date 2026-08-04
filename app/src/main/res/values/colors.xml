@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 기본 -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 🎨 그림 앱 스타일 -->
+    <color name="bgColor">#111111</color>          <!-- 전체 배경 -->
+    <color name="uiPanel">#66000000</color>        <!-- 아래 UI -->
+    <color name="textColor">#FFFFFF</color>        <!-- 글자 -->
+    <color name="accent">#444444</color>           <!-- 포인트 -->
+    <color name="controlbar">#888888</color>           <!-- 조절바 -->
+
+</resources>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lock"
+        android:title="🔒 잠금"/>
+
+    <item
+        android:id="@+id/crosshair"
+        android:title="🎯 십자선"/>
+</menu>
