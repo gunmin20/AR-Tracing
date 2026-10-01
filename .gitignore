@@ -13,3 +13,21 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Local IDE configuration
+.idea/
+.kotlin/
+
+# Build artifacts are distributed through GitHub Releases
+*.apk
+*.aab
+*.apks
+
+# Signing material and local secrets
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+.env
+.env.*
+!.env.example

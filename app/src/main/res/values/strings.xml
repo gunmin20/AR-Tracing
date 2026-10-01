@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AR Tracing</string>
+    <string name="camera_permission_required">카메라 미리보기를 사용하려면 설정에서 카메라 권한을 허용해 주세요.</string>
 </resources>
